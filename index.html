@@ -5,19 +5,23 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mirice — Mie Gulung Rice Paper</title>
+
   <meta name="description"
     content="MIRICE — Mie gulung yang dilapisi rice paper, isi keju & saus spesial. Pesan sekarang!" />
   <link rel="icon" type="image/x-icon" href="./assets/images/mirice1.png" />
+
+  <!-- Tailwind CSS -->
   <link href="./assets/css/output.css" rel="stylesheet">
   <!-- Animate.css -->
   <link rel="stylesheet" href="./assets/css/animate.min.css" />
-
   <!-- AOS -->
   <link rel="stylesheet" href="./assets/css/aos.css">
-
   <!-- Lightbox -->
   <link rel="stylesheet" href="./assets/css/lightbox.min.css">
+  <!-- Lucide Icons -->
   <script src="./assets/js/lucide.min.js"></script>
+
+  <!-- Custom Styles -->
   <style>
     html {
       scroll-behavior: smooth;
@@ -159,18 +163,18 @@
   </header>
 
   <div id="mobile-menu"
-    class="fixed left-0 z-40 hidden w-full py-4 border-t border-red-800 shadow-2xl top-16 bg-red-900/95 md:hidden">
+    class="fixed left-0 z-50 hidden w-full py-4 border-t border-red-800 shadow-2xl top-16 bg-red-900/95 md:hidden">
     <nav class="flex flex-col gap-4 px-6 text-base font-semibold text-red-200">
 
       <a href="#product"
         class="pt-10 pb-2 transition-colors duration-300 border-b border-red-800 nav-link hover:text-red-400">Produk</a>
       <a href="#harga"
-        class="py-2 transition-colors duration-300 border-b border-red-800 nav-link hover:text-red-400">Harga</a>
+        class="py-4 transition-colors duration-300 border-b border-red-800 nav-link hover:text-red-400">Harga</a>
       <a href="#team"
-        class="py-2 transition-colors duration-300 border-b border-red-800 nav-link hover:text-red-400">Tim</a>
+        class="py-4 transition-colors duration-300 border-b border-red-800 nav-link hover:text-red-400">Tim</a>
 
       <a href="#kontak"
-        class="w-full mt-2 text-center px-4 py-3 overflow-hidden font-bold text-red-900 transition-all duration-500 transform rounded-full shadow-xl bg-linear-to-r from-red-500 to-red-400 hover:shadow-red-500/50 group hover:scale-[1.01]">
+        class="w-full mt-6 text-center px-4 py-3 overflow-hidden font-bold text-red-900 transition-all duration-500 transform rounded-full shadow-xl bg-linear-to-r from-red-500 to-red-400 hover:shadow-red-500/50 group hover:scale-[1.01]">
         <span class="relative z-10">Pesan Sekarang</span>
         <div class="absolute inset-0 transition-opacity duration-300 bg-red-600 opacity-0 group-hover:opacity-100">
         </div>
@@ -179,7 +183,7 @@
   </div>
   <!-- END-Header -->
 
-  <main class="max-w-full px-40 pt-6 mx-auto mt-28">
+  <main class="max-w-full px-0.5 pt-6 mx-auto md:px-40 mt-20 md:mt-28">
 
     <!-- Hero -->
     <section id="product"
@@ -222,7 +226,7 @@
           </li>
           <li class="flex items-start gap-3">
             <i data-lucide="clock" class="text-orange-100 w-5 h-5 mt-0.5 shrink-0"></i>
-            <span>**Siap santap dalam 3 menit** — tinggal goreng atau panggang</span>
+            <span><span class="font-bold">Siap santap dalam 3 menit</span> — tinggal goreng atau panggang</span>
           </li>
         </ul>
 
@@ -528,9 +532,9 @@
           class="relative p-8 overflow-hidden text-center transition-all duration-300 bg-red-800 border border-red-700 shadow-xl group rounded-3xl hover:shadow-red-700/50 hover:-translate-y-3"
           data-aos="zoom-in" data-aos-delay="350">
 
-          <a href="./assets/images/imin2.jpg" data-lightbox="team" data-title="Muhaimin — Penyusun Laporan Proyek"
+          <a href="./assets/images/imin.jpg" data-lightbox="team" data-title="Muhaimin — Penyusun Laporan Proyek"
             class="relative block">
-            <img src="./assets/images/imin2.jpg" alt="Anggota 3"
+            <img src="./assets/images/imin.jpg" alt="Anggota 3"
               class="object-cover w-48 h-48 mx-auto transition-all duration-300 border-4 border-red-500 rounded-full shadow-lg cursor-pointer group-hover:border-red-400 hover:scale-105" />
             <div
               class="absolute inset-0 flex items-center justify-center w-48 h-48 mx-auto transition-opacity duration-300 rounded-full opacity-0 group-hover:opacity-100">
@@ -554,6 +558,103 @@
     </section>
     <!-- END-Tim -->
 
+    <!-- FAQ -->
+    <section id="faq"
+      class="relative z-10 px-6 py-20 mt-20 border-t border-red-800 shadow-2xl md:px-20 bg-red-900/80 rounded-3xl shadow-red-950/50 scroll-mt-32 backdrop-blur-sm">
+      <div class="max-w-6xl mx-auto">
+        <div class="mb-16 text-center" data-aos="fade-up" data-aos-delay="100">
+          <p class="mb-2 text-lg font-bold tracking-wider text-red-300 uppercase">
+            Punya Pertanyaan?
+          </p>
+          <h2 class="inline-block pb-2 text-6xl font-extrabold tracking-tight text-white border-b-4 border-red-600/70">
+            <span class="text-red-400">FAQ</span> Terkait MIRICE
+          </h2>
+          <p class="mt-4 text-xl text-red-200">
+            Temukan jawaban atas pertanyaan yang sering diajukan oleh pelanggan kami.
+          </p>
+        </div>
+
+        <div class="max-w-5xl mx-auto space-y-6" data-aos="fade-up" data-aos-delay="200">
+
+          <div
+            class="overflow-hidden transition-all duration-500 border border-red-700 shadow-xl bg-red-800/90 rounded-2xl shadow-red-950/50 hover:border-red-500">
+            <button
+              class="flex items-center justify-between w-full px-8 py-5 text-left transition-all duration-300 bg-red-800/90 hover:bg-red-800 faq-btn">
+              <span class="text-xl font-bold text-white">Bagaimana cara memesan MIRICE?</span>
+              <i data-lucide="chevron-down"
+                class="w-6 h-6 text-red-300 transition-transform duration-300 transform faq-icon"></i>
+            </button>
+            <div class="hidden px-8 py-5 text-red-200 border-t border-red-700 bg-red-800/90 faq-content">
+              <p class="text-lg">
+                Kamu bisa memesan dengan <span class="font-bold">klik tombol "Order via WhatsApp"</span> yang tersedia
+                pada halaman
+                produk
+                atau navigasi utama. Setelah itu, isi detail pesanan kamu pada formulir yang muncul dan
+                kirim.
+                Tim kami akan segera memprosesnya.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="overflow-hidden transition-all duration-500 border border-red-700 shadow-xl bg-red-800/90 rounded-2xl shadow-red-950/50 hover:border-red-500">
+            <button
+              class="flex items-center justify-between w-full px-8 py-5 text-left transition-all duration-300 bg-red-800/90 hover:bg-red-800 faq-btn">
+              <span class="text-xl font-bold text-white">Apakah MIRICE tersedia dalam variasi rasa?</span>
+              <i data-lucide="chevron-down"
+                class="w-6 h-6 text-red-300 transition-transform duration-300 transform faq-icon"></i>
+            </button>
+            <div class="hidden px-8 py-5 text-red-200 border-t border-red-700 bg-red-800/90 faq-content">
+              <p class="text-lg">
+                Ya, MIRICE saat ini hadir dalam <span class="font-bold">dua varian</span> yang dapat dipilih: Mirice
+                Original dan Mirice Pedas Keju.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="overflow-hidden transition-all duration-500 border border-red-700 shadow-xl bg-red-800/90 rounded-2xl shadow-red-950/50 hover:border-red-500">
+            <button
+              class="flex items-center justify-between w-full px-8 py-5 text-left transition-all duration-300 bg-red-800/90 hover:bg-red-800 faq-btn">
+              <span class="text-xl font-bold text-white">Apakah MIRICE bisa dikirim ke luar kota/pulau?</span>
+              <i data-lucide="chevron-down"
+                class="w-6 h-6 text-red-300 transition-transform duration-300 transform faq-icon"></i>
+            </button>
+            <div class="hidden px-8 py-5 text-red-200 border-t border-red-700 bg-red-800/90 faq-content">
+              <p class="text-lg">
+                Tentu saja. Kami melayani pengiriman ke <span class="font-bold">seluruh wilayah di Indonesia</span>.
+                Kami menggunakan
+                jasa
+                kurir yang terpercaya untuk memastikan produk tiba dalam kondisi terbaik. Biaya pengiriman
+                akan
+                disesuaikan dengan lokasi pengiriman Anda dan pilihan layanan (reguler/express).
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="overflow-hidden transition-all duration-500 border border-red-700 shadow-xl bg-red-800/90 rounded-2xl shadow-red-950/50 hover:border-red-500">
+            <button
+              class="flex items-center justify-between w-full px-8 py-5 text-left transition-all duration-300 bg-red-800/90 hover:bg-red-800 faq-btn">
+              <span class="text-xl font-bold text-white">Apa saja metode pembayaran yang diterima?</span>
+              <i data-lucide="chevron-down"
+                class="w-6 h-6 text-red-300 transition-transform duration-300 transform faq-icon"></i>
+            </button>
+            <div class="hidden px-8 py-5 text-red-200 border-t border-red-700 bg-red-800/90 faq-content">
+              <p class="text-lg">
+                Untuk kemudahan transaksi, kami menerima berbagai metode pembayaran, termasuk <span
+                  class="font-bold">Transfer
+                  Bank</span>
+                (BCA/Mandiri), dan pembayaran melalui dompet digital populer seperti <span
+                  class="font-bold">GoPay/OVO/DANA</span>.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- END-FAQ -->
   </main>
 
   <!-- Footer -->
@@ -877,6 +978,42 @@
       if (waLink) {
         waLink.href = `https://wa.me/${phoneNumber}?text=Halo%2C%20saya%20tertarik%20dengan%20Mirice.%20Mohon%20info%20pemesanan%20lebih%20lanjut.`;
       }
+
+      // J. FAQ Accordion Functionality
+      // Ambil semua tombol FAQ
+      const faqButtons = document.querySelectorAll('.faq-btn');
+
+      faqButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Dapatkan elemen konten (jawaban) dan ikon terkait
+          const faqItem = button.closest('div');
+          const content = faqItem.querySelector('.faq-content');
+          const icon = button.querySelector('.faq-icon');
+
+          // Toggle kelas 'hidden' untuk menampilkan/menyembunyikan konten
+          // Menggunakan properti style agar transisi Tailwind CSS pada overflow-hidden bekerja
+          if (content.style.display === 'block') {
+            content.style.display = 'none';
+            icon.style.transform = 'rotate(0deg)'; // Putar ikon ke bawah
+          } else {
+            // Sembunyikan semua konten lain dan reset ikon
+            document.querySelectorAll('.faq-content').forEach(item => {
+              if (item !== content) {
+                item.style.display = 'none';
+              }
+            });
+            document.querySelectorAll('.faq-icon').forEach(item => {
+              if (item !== icon) {
+                item.style.transform = 'rotate(0deg)';
+              }
+            });
+
+            // Tampilkan konten yang diklik
+            content.style.display = 'block';
+            icon.style.transform = 'rotate(180deg)'; // Putar ikon ke atas
+          }
+        });
+      });
     });
 
   </script>
